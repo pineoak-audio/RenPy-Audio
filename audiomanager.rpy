@@ -24,7 +24,13 @@
 ##    2.3. Registry - Channel: SFX & Environment
 
 
-# (!) A FAZER ----------------------------------------------------------------------------------------------
+# (!) TODO ----------------------------------------------------------------------------------------------
+
+# TODO [ ] Create a mixer for UI using "renpy.music.alias_channel(3, 'ui')" on line 25
+#          of the script renpy\common\00mixers.rpy, located in the engine folder.
+
+# TODO [ ] Delete
+#
 
 # TODO [ ] Create a mixer for UI using "renpy.music.alias_channel(3, 'ui')" on line 25
 #          of the script renpy\common\00mixers.rpy, located in the engine folder.
@@ -70,9 +76,9 @@ define audio.env_rain =       "audio/env/rain.ogg"
 define audio.env_talk =       "audio/env/talk.ogg"
 
 ## 1.2.3. Sound Effects
-define audio.shot =           "audio/sfx/gunshot.ogg"
-define audio.thunder =        "audio/sfx/thunder.ogg"
-define audio.door =           "audio/sfx/door.ogg"
+define audio.sfx_shot =       "audio/sfx/gunshot.ogg"
+define audio.sfx_thunder =    "audio/sfx/thunder.ogg"
+define audio.sfx_door =       "audio/sfx/door.ogg"
 
 ## 1.2.4. UI - Interface Interaction Sounds. Use "activate_sound ui.b_click" on buttons 
 define audio.ui_click =       "audio/ui/btn_click.ogg"
