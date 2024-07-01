@@ -22,6 +22,9 @@
 # This file contains code that sets up the various mixers, based on how
 # the user sets config.has_music, .has_sound, and .has_voice.
 
+
+## (!) THIS FILE GOES IN renpy-8.2.3-sdk/renpy/common/
+
 init -1600 python hide:
 
     # Set to False if you don't want sound to initialize without any mixers.
@@ -34,12 +37,11 @@ init -1600 python hide:
     config.has_sound = True
 
     # basics: True if the game will have UI sounds.
-    config.has_sound = True
+    config.has_ui = True # Added the default config for UI that must be passed to default.rpy script.
 
     # Sample sounds for various channels.
     config.sample_sound = None
     config.sample_voice = None
-
 
     # Register 8 channels by default, for compatiblity with older version
     # of Ren'Py.
@@ -50,7 +52,7 @@ init -1600 python hide:
     renpy.music.alias_channel(0, "sound")
     renpy.music.alias_channel(7, "music")
     renpy.music.alias_channel(2, "voice")
-    renpy.music.alias_channel(3, "ui")
+    renpy.music.alias_channel(3, "ui") # Added in order to enable UI mixer into Ren'Py
 
 init 1600:
 
